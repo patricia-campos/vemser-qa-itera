@@ -7,21 +7,54 @@ const dashboardElement = new DashboardElement
 
 export default class DashboardPage {
 
-    // Criar novo 
 
     abrirNavegador() {
         utils.navegar(dashboardElement.urlDashboard());
     }
 
+    //=======================================================================================
+
+    // ACESSAR CREATE NEW CUSTOMER
+
     clicarCreateNew() {
         utils.click(dashboardElement.createNewBtn());
     }
 
-    // Validações:
-
     validarAcessoCreateComSucesso() {
         utils.validarText(dashboardElement.validaAcessoCreateComSucesso(), 'Create')
     }
+
+    //=======================================================================================
+
+    // ACESSAR SEARCH
+
+    preencherSearch() {
+        utils.preencherInput(dashboardElement.searchField());
+    }
+
+    clicarSearch() {
+        utils.click(dashboardElement.editBtn());
+    }
+
+    validarAcessoSearchComSucesso() {
+        utils.validarText(dashboardElement.validaAcessoSearchComSucesso(), 'Create')
+    }
     
+    //=======================================================================================
+
+    // ACESSAR EDIT
+
+    clicarEdit() {
+        utils.click(dashboardElement.editBtn());
+    }
+
+    validarAcessoEditComSucesso() {
+        utils.validarText(dashboardElement.validaAcessoEditComSucesso(), 'Create')
+    }
+    
+
+
+
+
 
 }

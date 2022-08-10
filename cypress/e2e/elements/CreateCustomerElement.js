@@ -17,7 +17,6 @@ export default class CreateCustomerElement {
 
     createBtn() {return 'body > div > form > div > div:nth-child(9) > div > input'}
 
-    /*
-    validaCadastro() {return 'body > div > form > div > div:nth-child(11) > div > label'}
-    */
+    validaCreateCostumerComSucesso() {return 'body > div > div > h3'}
+
 }

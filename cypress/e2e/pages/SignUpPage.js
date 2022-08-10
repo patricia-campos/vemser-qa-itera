@@ -54,6 +54,10 @@ export default class SignUpPage {
         utils.preencherInput(signUpElement.confirmPasswordField(), confirm_password)
     }
 
+    preencherConfirmPasswordDiferente() {
+        utils.preencherInput(signUpElement.confirmPasswordField(), 'passwordIncorreto')
+    }
+
     clicarSubmit() {
         utils.click(signUpElement.submitBtn());
     }
@@ -64,5 +68,17 @@ export default class SignUpPage {
         utils.validarText(signUpElement.validaSignUpComSucesso(), 'Registration Successful')
     }
 
+    validarSignUpSemSucessoVazio() {
+        utils.validarText(signUpElement.validaSignUpSemSucessoNomeVazio(), 'Please enter first name')
+    }
 
+    validarSignUpSemSucessoSurnameVazio() {
+        utils.validarText(signUpElement.validaSignUpSemSucessoSurnameVazio(), 'Please enter surname')
+    }
+
+    validarSignUpSemSucessoPassword() {
+        utils.validarText(signUpElement.validaSignUpSemSucessoPassword(), 'do not match.')
+    }
+
+    
 }

@@ -3,7 +3,7 @@ import LoginPage from "../pages/LoginPage";
 const loginPage = new LoginPage;
 
 
-context('Efetuar login com Sucesso', () => {
+context('Efetuar login', () => {
 
     it('logar com sucesso', () => {
 
@@ -14,4 +14,27 @@ context('Efetuar login com Sucesso', () => {
     loginPage.validarLoginComSucesso();
 
 })
+
+it('logar sem sucesso campo vazio', () => {
+
+    loginPage.abrirNavegador();
+    loginPage.preencherPassword();
+    loginPage.clicarLogin();
+    loginPage.validarLoginSemSucesso();
+
+})
+
+it('logar sem sucesso password erradfo', () => {
+
+    loginPage.abrirNavegador();
+    loginPage.preencherUsername
+    loginPage.preencherPasswordErrado();
+    loginPage.clicarLogin();
+    loginPage.validarLoginSemSucesso();
+
+})
+
+
+
+
 })

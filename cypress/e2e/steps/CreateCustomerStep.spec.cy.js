@@ -7,9 +7,9 @@ import LoginPage from "../pages/LoginPage";
 const loginPage = new LoginPage;
 
 
-context('Criar usuário com Sucesso', () => {
+context('Criar usuário', () => {
 
-    it('criar usuário com sucesso', () => {
+    it('Criar usuário com sucesso', () => {
 
     loginPage.abrirNavegador();
     loginPage.preencherUsername();
@@ -24,10 +24,7 @@ context('Criar usuário com Sucesso', () => {
     createCustomerPage.preencherPhone();
     createCustomerPage.preencherEmail();
     createCustomerPage.clicarCreate();
-
-    /*
-    signUpPage.validarCadastro();
-    */
-
+    createCustomerPage.validarCreateCostumerComSucesso();
+   
 })
 })

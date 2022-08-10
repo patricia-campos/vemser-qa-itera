@@ -44,16 +44,11 @@ export default class CreateCustomerPage {
         utils.click(createCustomerElement.createBtn());
     }
 
+    // Validações:
+
+    validarCreateCostumerComSucesso() {
+        utils.validarText(createCustomerElement.validaCreateCostumerComSucesso(), 'Welcome novousername')
+    }
+
 }
 
-/*
-// Variáveis:
-
-let first_name = 'Coraline';
-let surname = 'Jones';
-let e_post = '12345';
-let mobile = 'mobile';
-//let username = 'novousername';
-let password = '123';
-let confirm_password = '123';
-*/

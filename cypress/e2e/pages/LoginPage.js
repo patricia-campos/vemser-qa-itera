@@ -26,6 +26,11 @@ export default class LoginPage {
         utils.preencherInput(loginElement.passwordField(), password)
     }
 
+    preencherPasswordErrado() {
+        utils.preencherInput(loginElement.passwordField(), '456')
+    }
+
+
     clicarLogin() {
         utils.click(loginElement.loginBtn());
     }
@@ -34,6 +39,10 @@ export default class LoginPage {
 
     validarLoginComSucesso() {
         utils.validarText(loginElement.validaLogin(), 'Dashboard')
+    }
+
+    validarLoginSemSucesso() {
+        utils.validarText(loginElement.validaLoginSemSucesso(), 'Wrong username or password')
     }
 
 }

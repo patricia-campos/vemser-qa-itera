@@ -23,4 +23,10 @@ export default class SignUpElement {
 
     validaSignUpComSucesso() {return 'body > div > form > div > div:nth-child(11) > div > label'}
 
+    validaSignUpSemSucessoNomeVazio() {return '#FirstName-error'}
+
+    validaSignUpSemSucessoSurnameVazio() {return '#Surname-error'}
+
+    validaSignUpSemSucessoPassword() {return '#ConfirmPassword-error'}
+
 }
