@@ -3,7 +3,7 @@ import SignUpPage from "../pages/SignUpPage";
 const signUpPage = new SignUpPage;
 
 
-context('Cadastrar com Sucesso', () => {
+context('Cadastrar Usuário', () => {
 
     it('cadastrar com sucesso', () => {
 
