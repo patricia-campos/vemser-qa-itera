@@ -6,6 +6,13 @@ import LoginPage from "../pages/LoginPage";
 
 const loginPage = new LoginPage;
 
+import CreateCustomerPage from "../pages/CreateCustomerPage";
+
+const createCustomerPage = new CreateCustomerPage;
+
+import SearchPage from "../pages/SearchPage";
+
+const searchPage = new SearchPage;
 
 context('Editar usuário', () => {
 
@@ -15,6 +22,21 @@ context('Editar usuário', () => {
     loginPage.preencherUsername();
     loginPage.preencherPassword();
     loginPage.clicarLogin();
+
+    createCustomerPage.abrirNavegador();
+    createCustomerPage.preencherNameEdit();
+    createCustomerPage.preencherCompany();
+    createCustomerPage.preencherAddress();
+    createCustomerPage.preencherCity(); 
+    createCustomerPage.preencherPhone();
+    createCustomerPage.preencherEmail();
+    createCustomerPage.clicarCreate();
+    createCustomerPage.validarCreateCostumerComSucesso();
+
+    searchPage.abrirNavegador();
+    searchPage.preencherBuscaEdit();
+    searchPage.clicarSearch();
+
     editPage.clicarEdit();
     editPage.preencherName();
     editPage.preencherCompany();
@@ -24,11 +46,13 @@ context('Editar usuário', () => {
     editPage.preencherEmail();
     editPage.clicarSave();
 
-    //editPage.validarEditComSucesso(); VERIFICAR VALIDAÇÃO
+    //Valida a busca
+    searchPage.abrirNavegador();
+    searchPage.preencherBuscaEditAfter();
+    searchPage.clicarSearch();
+    searchPage.validarBuscaEditComSucesso();
     
 })
-
-
 
 /*
 

@@ -19,7 +19,7 @@ export default class EditElement {
 
     editBtn() {return 'body > div > div > table > tbody > tr:nth-child(2) > td:nth-child(7) > a.btn.btn-outline-primary'}
 
-    //validaEditComSucesso() {return 'body > div > div > table > tbody > tr:nth-child(2) > td:nth-child(1)'} VERIFICAR VALIDAÇÃO
+    validaEditComSucesso() {return 'body > div > div > table > tbody > tr:nth-child(2) > td:nth-child(1)'} 
 
     //validaEditSemSucesso() {return 'body > div > div > table > tbody > tr:nth-child(2) > td:nth-child(1)'} 
 

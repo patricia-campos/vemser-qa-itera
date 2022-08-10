@@ -15,8 +15,20 @@ export default class SearchPage {
     }
 
     preencherBuscaNomeValida() {
-        utils.preencherInput(searchElement.nameOrEmailField(), 'shine A')
+        utils.preencherInput(searchElement.nameOrEmailField(), 'Alanis Almeida')
     } 
+
+    preencherBuscaDelete() {
+        utils.preencherInput(searchElement.nameOrEmailField(), 'Serei Deletado')
+    }
+
+    preencherBuscaEdit() {
+        utils.preencherInput(searchElement.nameOrEmailField(), 'Serei Editado')
+    }
+
+    preencherBuscaEditAfter() {
+        utils.preencherInput(searchElement.nameOrEmailField(), 'Fui Editado')
+    }
 
     preencherBuscaEmailValida() {
         utils.preencherInput(searchElement.nameOrEmailField(), 'xyz@itera.com')
@@ -37,9 +49,13 @@ export default class SearchPage {
     // Validações:
 
     validarBuscaComSucesso() {
-        utils.validarText(searchElement.validaSearchComSucesso(), 'shine A')
+        utils.validarText(searchElement.validaSearchComSucesso(), 'Alanis Almeida')
     }
 
+    validarBuscaEditComSucesso() {
+        utils.validarText(searchElement.validaSearchComSucesso(), 'Fui Editado')
+    }
+    
     validarBuscaSemSucesso() {
         utils.validarText(searchElement.validaSearchSemSucesso(), 'No Match')
     }

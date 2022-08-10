@@ -17,8 +17,16 @@ export default class CreateCustomerPage {
     }
 
     preencherName() {
-        utils.preencherInput(createCustomerElement.nameField(), chance.name())
+        utils.preencherInput(createCustomerElement.nameField(), 'Alanis Almeida')
     } 
+
+    preencherNameEdit() {
+        utils.preencherInput(createCustomerElement.nameField(), 'Serei Editado')
+    }
+
+    preencherNameDelete() {
+        utils.preencherInput(createCustomerElement.nameField(), 'Serei Deletado')
+    }
 
     preencherCompany() {
         utils.preencherInput(createCustomerElement.companyField(), chance.company())

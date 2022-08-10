@@ -7,7 +7,7 @@ export default class SearchElement {
 
     searchBtn() {return 'body > div > div > form > input.btn.btn-secondary.my-2.my-sm-0'}
 
-    validaSearchComSucesso() {return 'body > div > div > table > tbody > tr:nth-child(2) > td:nth-child(1)'} //validar pela quantidade
+    validaSearchComSucesso() {return 'body > div > div > table > tbody > tr:nth-child(2) > td:nth-child(1)'} 
 
     validaSearchSemSucesso() {return 'body > div > div > table > tbody > tr:nth-child(2) > td'} //No Match string
 
